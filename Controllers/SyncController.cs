@@ -40,6 +40,7 @@ namespace WatermemonSync.Controllers
         {
             var time = DateTimeOffset.Now.ToUnixTimeMilliseconds();
             repository.Push(request.Changes);
+
             return time;
         }
     }
